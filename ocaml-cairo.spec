@@ -10,7 +10,7 @@
 
 Name:           ocaml-cairo
 Version:        1.2.0.cvs20080301
-Release:        %mkrel 1
+Release:        %mkrel 2
 
 Summary:        OCaml library for accessing cairo graphics
 Group:          Development/Other
