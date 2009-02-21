@@ -63,6 +63,7 @@ cp %{SOURCE1} META
 %build
 make
 make doc
+sed -i -e 's:@VERSION@:%{version}:g' META
 
 %install
 rm -rf %{buildroot}
