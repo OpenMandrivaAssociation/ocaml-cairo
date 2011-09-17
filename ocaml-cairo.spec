@@ -8,10 +8,14 @@
 # questionable.  If files get checked out in a different order then
 # you might need to use 'diff -urN' instead of comparing MD5 hashes.
 
+# Using git:
+# $ git clone git://anongit.freedesktop.org/cairo-ocaml
+# $ git archive --format=tar --prefix=cairo-ocaml/ cairo-ocaml-1.2.0 | gzip > ocaml-cairo-1.2.0.tar.gz
+
+
 Name:           ocaml-cairo
-Version:        1.2.0.cvs20080301
-%define subrel 1
-Release:        %mkrel 4
+Version:        1.2.0
+Release:        5
 
 Summary:        OCaml library for accessing cairo graphics
 Group:          Development/Other
@@ -25,7 +29,7 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 Requires:       ocaml
 BuildRequires:  ocaml >= 3.10.0
 BuildRequires:  ocaml-findlib
-BuildRequires:  ocaml-lablgtk2-devel
+BuildRequires:  ocaml-lablgtk2
 BuildRequires:  cairo-devel
 BuildRequires:  automake
 BuildRequires:  gtk2-devel
@@ -58,7 +62,7 @@ developing applications that use %{name}.
 %setup -q -n cairo-ocaml
 aclocal -I support
 autoconf
-./configure --libdir=%{_libdir}
+%configure2_5x
 cp %{SOURCE1} META
 
 %build
