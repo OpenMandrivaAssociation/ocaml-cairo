@@ -29,7 +29,7 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 Requires:       ocaml
 BuildRequires:  ocaml >= 3.10.0
 BuildRequires:  ocaml-findlib
-BuildRequires:  ocaml-lablgtk2
+BuildRequires:  ocaml-lablgtk2-devel
 BuildRequires:  cairo-devel
 BuildRequires:  automake
 BuildRequires:  gtk2-devel
