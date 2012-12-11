@@ -103,3 +103,35 @@ rm -rf %{buildroot}
 %{_libdir}/ocaml/cairo/*.cmx
 %{_libdir}/ocaml/cairo/*.mli
 
+
+
+%changelog
+* Mon Sep 19 2011 Alexandre Lissy <alissy@mandriva.com> 1.2.0.1-5
++ Revision: 700302
+- Changing BuildRequires against ocaml-lablgtk2 to -devel
+- Updating version
+- Release bump
+- Using tarball from git, not cvs
+  Updating BuildRequires against ocaml-lablgtk2 instead of ocaml-lablgtk2-devel because of pango.cmo needed
+
+* Thu Apr 22 2010 Florent Monnier <blue_prawn@mandriva.org> 1.2.0.cvs20080301-4.1mdv2011.0
++ Revision: 537991
+- just a rebuild to fix the "inconsistent assumptions over interface" problem
+
+* Sun Jun 28 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.2.0.cvs20080301-4mdv2010.0
++ Revision: 390235
+- rebuild
+
+* Sat Feb 21 2009 Florent Monnier <blue_prawn@mandriva.org> 1.2.0.cvs20080301-3mdv2009.1
++ Revision: 343706
+- incremented rel number
+- added version in the META file
+
+* Tue Feb 03 2009 Florent Monnier <blue_prawn@mandriva.org> 1.2.0.cvs20080301-2mdv2009.1
++ Revision: 337135
+- The initial RPM release was made from the fedora rpm .spec file (revision 1.7) by Richard W.M. Jones
+- import ocaml-cairo
+
+
+* Tue Dec 16 2008 Florent Monnier <fmonnier@linux-nantes.org> 1.2.0.cvs20080301-1mdv
+- Initial RPM release made from the redhat rpm .spec file (revision 1.7) by Richard W.M. Jones
