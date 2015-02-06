@@ -4,7 +4,7 @@
 Summary:	OCaml library for accessing cairo graphics
 Name:		ocaml-cairo
 Version:	1.2.0.1
-Release:	6
+Release:	7
 License:	LGPLv2+
 Group:		Development/Other
 Url:		http://cairographics.org/cairo-ocaml/
