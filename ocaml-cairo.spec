@@ -7,7 +7,7 @@ Version:	1.2.0.1
 Release:	7
 License:	LGPLv2+
 Group:		Development/Other
-Url:		http://cairographics.org/cairo-ocaml/
+Url:		https://cairographics.org/cairo-ocaml/
 Source0:	ocaml-cairo-%{version}.tar.gz
 Source1:	ocaml-cairo-META
 BuildRequires:	ocaml
