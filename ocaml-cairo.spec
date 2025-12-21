@@ -10,6 +10,11 @@ Group:		Development/Other
 Url:		https://cairographics.org/cairo-ocaml/
 Source0:	ocaml-cairo-%{version}.tar.gz
 Source1:	ocaml-cairo-META
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	ocaml
 BuildRequires:	ocaml-findlib
 BuildRequires:	ocaml-lablgtk2
